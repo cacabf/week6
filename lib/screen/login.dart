@@ -173,7 +173,7 @@ class Login extends StatelessWidget {
                   GestureDetector(
                     onTap: () {},
                     child: const Text(
-                      "Daftar Sekarang",
+                      "Bikin akun",
                       style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.bold,
