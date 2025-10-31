@@ -45,7 +45,7 @@ class SplashScreenDart1 extends StatelessWidget {
                           height: 5,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: const Color.fromARGB(255, 0, 0, 0),
+                            color: Colors.green,
                           ),
                         ),
                         SizedBox(width: 10),
@@ -54,7 +54,7 @@ class SplashScreenDart1 extends StatelessWidget {
                           height: 5,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: const Color.fromARGB(255, 0, 0, 0),
+                            color: Colors.green[100]!,
                           ),
                         ),
                         SizedBox(width: 10),
@@ -63,10 +63,22 @@ class SplashScreenDart1 extends StatelessWidget {
                           height: 5,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: const Color.fromARGB(255, 0, 0, 0),
+                            color: Colors.green[100]!,
                           ),
                         ),
                       ],
+                    ),
+
+                    SizedBox(height: 30),
+                    Container(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          //next todo
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Color(0xFF00A86B)
+                        ),child: Text('Continue', style: TextStyle(fontSize: 15,),
+                        ),),
                     ) 
                 ],
                 
