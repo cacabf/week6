@@ -25,8 +25,15 @@ class SplashScreenDart1 extends StatelessWidget {
                     ),
                     Text('Welcome selamat datang',
                     style: TextStyle(
-                      fontSize: 35,
+                      fontSize: 40,
                       fontWeight: FontWeight.bold,
+                    ),
+                    ),
+                    SizedBox(height: 20),
+                    Text('nyoba aja dulu bikin splash screen',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.normal,
                     ),
                     ),
                 ],
