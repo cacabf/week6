@@ -17,8 +17,7 @@ class SplashScreenDart1 extends StatelessWidget {
                       shape: BoxShape.circle,
                       color: Colors.amber,
                       image: DecorationImage(image: 
-                      NetworkImage('https://png.pngtree.com/thumb_back/fh260/background/20241008/pngtree-breathtaking-panoramic-view-of-a-summer-landscape-featuring-majestic-waterfalls-charming-image_16334134.jpg'
-                      ),
+                      AssetImage("assets/images/cropped-logo-global-institute-4.png"),
                       fit: BoxFit.cover
                       ),
                       ),
@@ -30,12 +29,20 @@ class SplashScreenDart1 extends StatelessWidget {
                     ),
                     ),
                     SizedBox(height: 20),
-                    Text('nyoba aja dulu bikin splash screen',
+                    Text('Forgot to bring your wallet\nwhen going to the store?\nDont worry we got you covered',
                     style: TextStyle(
                       fontSize: 15,
-                      fontWeight: FontWeight.normal,
+                      fontWeight: FontWeight.bold,
                     ),
                     ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('titik pertama'),
+                        Text('titik kedua'),
+                        Text('titik ketiga'),
+                      ],
+                    ) 
                 ],
                 
               ),
