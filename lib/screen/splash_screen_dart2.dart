@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_uts_splash/screen/splash_screen_dart3.dart';
+import 'package:latihan_uts_splash/screen/login.dart';
+import '../main.dart';
 class SplashScreenDart2 extends StatelessWidget {
   const SplashScreenDart2({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        actions: [],
+      ),
             body: SafeArea( 
               child: Center(
               child: Column(

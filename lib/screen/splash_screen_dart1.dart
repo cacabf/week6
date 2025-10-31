@@ -6,6 +6,9 @@ class SplashScreenDart1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        actions: [],
+      ),
             body: SafeArea( 
               child: Center(
               child: Column(
