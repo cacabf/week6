@@ -28,19 +28,44 @@ class SplashScreenDart1 extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                     ),
-                    SizedBox(height: 20),
+                    SizedBox(height: 30),
                     Text('Forgot to bring your wallet\nwhen going to the store?\nDont worry we got you covered',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
                     ),
                     ),
+                    SizedBox(height: 30),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text('titik pertama'),
-                        Text('titik kedua'),
-                        Text('titik ketiga'),
+                        Container(
+                          width: 5,
+                          height: 5,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: const Color.fromARGB(255, 0, 0, 0),
+                          ),
+                        ),
+                        SizedBox(width: 10),
+                        Container(
+                          width: 5,
+                          height: 5,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: const Color.fromARGB(255, 0, 0, 0),
+                          ),
+                        ),
+                        SizedBox(width: 10),
+                        Container(
+                          width: 5,
+                          height: 5,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: const Color.fromARGB(255, 0, 0, 0),
+                          ),
+                        ),
                       ],
                     ) 
                 ],
