@@ -16,13 +16,13 @@ class SplashScreenDart1 extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.amber,
-                      image: DecorationImage(image: :
-                      Assetimage("assets/images/dart1.png"),)),
+                      image: DecorationImage(image: 
+                      NetworkImage('https://i.postimg.cc/3x3QzSGq/logo.png'),),),
                     ),
                 ],
                 
               ),
             ),
-          );;
+          );
   }
 }
