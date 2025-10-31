@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_uts_splash/screen/login.dart';
+import 'login.dart';
 import '../main.dart';
 class SplashScreenDart3 extends StatelessWidget {
   const SplashScreenDart3({super.key});
@@ -86,9 +86,12 @@ class SplashScreenDart3 extends StatelessWidget {
                         child: ElevatedButton(
                           onPressed: () {
                             //next todo
-                             MaterialPageRoute(builder: (context) => Login());
-                             (Route<dynamic> route) => false;
-                             
+                             Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Login(),
+                              )
+                              );  
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Color(0xFF00A86B)
