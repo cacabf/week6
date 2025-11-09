@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'signup.dart'; // ⬅️ import halaman signup
+import 'signup.dart';
+import 'reset_password.dart'; // ⬅️ tambahkan import ini
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -38,7 +39,7 @@ class Login extends StatelessWidget {
                   "Silakan login untuk melanjutkan",
                   style: TextStyle(
                     fontSize: 16.0,
-                    color: Colors.lightBlue[200],
+                    color: Colors.lightBlueAccent,
                   ),
                 ),
               ),
@@ -98,7 +99,12 @@ class Login extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const ResetPassword()),
+                    );
+                  },
                   child: Text(
                     "Lupa Password?",
                     style: TextStyle(color: Colors.blue[700], fontSize: 14),
@@ -124,7 +130,7 @@ class Login extends StatelessWidget {
               ),
               const SizedBox(height: 20),
 
-              // Divider dengan teks "Atau"
+              // Divider
               Row(
                 children: [
                   Expanded(
@@ -147,7 +153,7 @@ class Login extends StatelessWidget {
               ),
               const SizedBox(height: 20),
 
-              // Tombol Google Login
+              // Login Google
               OutlinedButton.icon(
                 onPressed: () {},
                 icon: const Icon(Icons.g_mobiledata, color: Colors.red, size: 30),
@@ -166,7 +172,7 @@ class Login extends StatelessWidget {
               ),
               const SizedBox(height: 30),
 
-              // Register text
+              // Register
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
